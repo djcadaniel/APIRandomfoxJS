@@ -14,6 +14,7 @@ const createImageNode = () =>{
   container.className = 'p-3';
   container.style.width = '200'
   container.style.height = '200'
+  container.style.minWidth = 320
   // container.style = 'background-color: green';
 
   const image = document.createElement('img');
@@ -33,7 +34,7 @@ const createImageNode = () =>{
 };
 
 const mountNode = document.getElementById('images');
-mountNode.className = 'grid grid-cols-4 grid-flow-row gap-4';
+mountNode.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-4';
 
 const addButton = document.querySelector('button');
 const cleanButton  = document.querySelector('.btnClean')

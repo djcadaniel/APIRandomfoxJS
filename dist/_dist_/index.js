@@ -11,7 +11,7 @@ const createImageNode = () =>{
   const random = () => Math.floor(Math.random() * (maximum - minimum) + minimum);
 
   const container = document.createElement('div');
-  container.className = 'p-3';
+  // container.className = 'p-1';
   container.style.width = '200'
   container.style.height = '200'
   container.style.minWidth = 320
@@ -23,9 +23,9 @@ const createImageNode = () =>{
   image.width = 320;
 
   const imageWrapper = document.createElement('div');
-  imageWrapper.style = 'background-color: gray';
-  imageWrapper.style.width = '200'
-  imageWrapper.style.height = '200'
+  // imageWrapper.style = 'background-color: gray';
+  // imageWrapper.width = '320'
+  // imageWrapper.style.height = '30'
   imageWrapper.style.borderRadius = '15px'
 
   container.appendChild(imageWrapper);
@@ -34,7 +34,7 @@ const createImageNode = () =>{
 };
 
 const mountNode = document.getElementById('images');
-mountNode.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-4';
+mountNode.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-4 mt-5';
 
 const addButton = document.querySelector('button');
 const cleanButton  = document.querySelector('.btnClean')
